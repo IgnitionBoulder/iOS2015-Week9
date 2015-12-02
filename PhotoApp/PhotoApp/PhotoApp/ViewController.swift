@@ -29,8 +29,12 @@ class ViewController: UIViewController, UICollectionViewDataSource,UINavigationC
 
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
             pickerController.sourceType = UIImagePickerControllerSourceType.Camera
-        }else{
+        }else if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary){
             pickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        }else{
+            let alert = UIAlertController(title: "Error", message: "No Supported Picker Type", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
         }
         
         self.presentViewController(pickerController, animated: true, completion: nil)
