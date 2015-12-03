@@ -100,8 +100,8 @@
 				CD7FA0BF1C0E336D009A73C2 /* AppDelegate.swift */,
 				CD7FA0C11C0E336D009A73C2 /* ViewController.swift */,
 				CD7FA0C31C0E336D009A73C2 /* Main.storyboard */,
-				CD7FA0C61C0E336D009A73C2 /* Assets.xcassets */,
 				CD7FA0C81C0E336D009A73C2 /* LaunchScreen.storyboard */,
+				CD7FA0C61C0E336D009A73C2 /* Assets.xcassets */,
 				CD7FA0CB1C0E336D009A73C2 /* Info.plist */,
 			);
 			path = PhotoApp;
